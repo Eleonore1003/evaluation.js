@@ -1,0 +1,20 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #eee;
+    border: 10px solid #78430b;
+}
+
+.button {
+    font-weight: 400;
+    color: gray;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: black;
+    font-size: larger;
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+}
