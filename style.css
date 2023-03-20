@@ -18,3 +18,24 @@ body {
     transition-delay: 0s;
     transition-timing-function: ease;
 }
+
+.player {
+    font-weight: 300;
+    font-size: large;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.active-player {
+    content: url(./images/icons/circle-fill.svg);
+    width: 13px;
+    margin-left: 10px;
+    padding-bottom: 2px;
+}
+
+.score {
+    font-weight: 200;
+    font-size: 50px;
+    margin: 0;
+}
+
