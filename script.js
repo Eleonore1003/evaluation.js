@@ -28,6 +28,15 @@ const rollDice = function () {
     }
 };
 
+// Changer de joueur
+const changePlayer = function () {
+    roundScore = 0;
+    document.querySelector(`#current-${activePlayer}`).textContent = 0;
+    activePlayer = activePlayer === 0 ? 1 : 0;
+    player0.classList.toggle("active-player");
+    player1.classList.toggle("active-player");
+};
+
 
 newGame.addEventListener("click", replay, false);
 roll.addEventListener("click", rollDice, false);
