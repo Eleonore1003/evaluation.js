@@ -11,6 +11,11 @@ const newGame = document.querySelector("#new-game");
 const player0 = document.querySelector(".player-0");
 const player1 = document.querySelector(".player-1");
 
+// Nouvelle partie
+const replay = function () {
+    document.location.reload();
+};
+
 // Lancer le dé 
 const rollDice = function () {
     randomNumber = Math.floor(Math.random()*6) + 1;
@@ -22,3 +27,7 @@ const rollDice = function () {
         changePlayer();
     }
 };
+
+
+newGame.addEventListener("click", replay, false);
+roll.addEventListener("click", rollDice, false);
