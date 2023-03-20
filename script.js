@@ -37,6 +37,13 @@ const changePlayer = function () {
     player1.classList.toggle("active-player");
 };
 
+// Score GLOBAL : Ajouter le current-score et changer de score
+const holdScore = function () {
+    scores[activePlayer] += roundScore;
+    document.querySelector(`#score-${activePlayer}`).textContent = scores[activePlayer];
+}
+
 
 newGame.addEventListener("click", replay, false);
 roll.addEventListener("click", rollDice, false);
+hold.addEventListener("click", holdScore, false);
