@@ -41,7 +41,15 @@ const changePlayer = function () {
 const holdScore = function () {
     scores[activePlayer] += roundScore;
     document.querySelector(`#score-${activePlayer}`).textContent = scores[activePlayer];
+
+// Vérifier le score : si Winner sinon changer de joueur
+if (scores[activePlayer] >= 100) {
+    document.querySelector(`.playerName-${activePlayer}`).classList.add("winner-player");
+    document.querySelector(`.playerName-${activePlayer}`).innerHTML = `<p>winner !</p>`;
+} else {
+    changePlayer();
 }
+};
 
 
 newGame.addEventListener("click", replay, false);

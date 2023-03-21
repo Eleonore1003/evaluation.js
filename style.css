@@ -87,3 +87,8 @@ body {
 .icon-download {
     content: url(./images/icons/ios-download-outline.svg);
 }
+
+.winner-player {
+    font-weight: 700;
+    color: red;
+}
